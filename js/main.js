@@ -4,7 +4,8 @@ document.querySelector("#pumpkin").addEventListener("click", makeZero);
 document.querySelector("#dominosPizza").addEventListener("click", jumanji);
 document.querySelector("#zebra").addEventListener("click", add9);
 document.querySelector("#cantThinkOfAnything").addEventListener("click", sub2);
-document.querySelector("#ledosPizza").addEventListener("click", add100);
+document.querySelector("#aStack").addEventListener("click", addStack);
+
 function makeZero() {
   total = 0;
   document.querySelector("#placeToPutResult").innerText = total;
@@ -25,7 +26,7 @@ function sub2() {
   document.querySelector("#placeToPutResult").innerHTML = total;
 }
 
-function add100() {
-  total = total + 100;
+function addStack() {
+  total = total + 1000;
   document.querySelector("#placeToPutResult").innerHTML = total;
 }
